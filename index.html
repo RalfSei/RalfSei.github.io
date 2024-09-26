@@ -4,31 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testseite für KI, Testfiles zum Download</title>
+    <!-- Google Fonts einbinden -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- CSS einbinden -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #fafafa;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            transition: transform 0.2s;
+        }
+
+        li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        audio {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        @media (max-width: 600px) {
+            main {
+                margin: 20px;
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Testseite für KI, Testfiles zum Download</h1>
-      <p>Ich habe hier aus einem vorhanden PDF mit einer künstlichen Intelligenz ein Podcast erstellen lassen. <br>
-         <br>
-         Der Podcast wurde mit einem Tool automatisch erstellt und er simuliert ein Gespräch zwischen zwei Personen, die sich über den Inhalt der PDF-Datei unterhalten. <br>
-         Das PDF ist ein Bericht von Mario Draghi, der neulich über die Wettbewerbsfähigkeit der EU einen Bericht veröffentlicht hatte. <br>
-         <br>
-         Google bietet diese Funktion bisher nur für Podcasts an, deren Endergebnis auf Englisch ist, aber ich habe noch ein anderes Tool gefunden, was ich demnächst ausprobieren werde. <br>
-         Hier sprechen keine echten Personen und das wurde auch nicht von mir gesprochen, sondern es ist komplett künstlich erzeugt mit dem PDF als Input. <br>
-         Viel Spaß beim Hören! 
-      </p>
-    <ul>
-        <li>
-            <a href="The future of European competitiveness_podcast.mp3" download>Download des Podcasts (MP3)</a>
-            <br>
-            <audio controls>
-                <source src="The future of European competitiveness_podcast.mp3" type="audio/mpeg">
-                Dein Browser unterstützt das Abspielen der Audio-Datei nicht.
-            </audio>
-        </li>
-        <li>
-            <a href="The future of European competitiveness_ In-depth analysis and recommendations_0.pdf" download>Download der PDF-Quelle</a>
-        </li>
-    </ul>
+    <header>
+        <h1>Testseite für KI, Testfiles zum Download</h1>
+    </header>
+    <main>
+        <p>Ich habe hier aus einem vorhandenen PDF mit einer künstlichen Intelligenz ein Podcast erstellen lassen.<br><br>
+           Der Podcast wurde mit einem Tool automatisch erstellt und simuliert ein Gespräch zwischen zwei Personen, die sich über den Inhalt der PDF-Datei unterhalten.<br>
+           Das PDF ist ein Bericht von Mario Draghi, der neulich über die Wettbewerbsfähigkeit der EU einen Bericht veröffentlicht hatte.<br><br>
+           Google bietet diese Funktion bisher nur für Podcasts an, deren Endergebnis auf Englisch ist, aber ich habe noch ein anderes Tool gefunden, das ich demnächst ausprobieren werde.<br>
+           Hier sprechen keine echten Personen und das wurde auch nicht von mir gesprochen, sondern es ist komplett künstlich erzeugt mit dem PDF als Input.<br>
+           Viel Spaß beim Hören! 
+        </p>
+        <ul>
+            <li>
+                <a href="The future of European competitiveness_podcast.mp3" download>Download des Podcasts (MP3)</a>
+                <audio controls>
+                    <source src="The future of European competitiveness_podcast.mp3" type="audio/mpeg">
+                    Dein Browser unterstützt das Abspielen der Audio-Datei nicht.
+                </audio>
+            </li>
+            <li>
+                <a href="The future of European competitiveness_ In-depth analysis and recommendations_0.pdf" download>Download der PDF-Quelle</a>
+            </li>
+        </ul>
+    </main>
+    <footer>
+        &copy; 2024 Dein Name. Alle Rechte vorbehalten.
+    </footer>
 </body>
+</html>
+
 </html>
 
