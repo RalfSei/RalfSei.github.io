@@ -2,46 +2,89 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Ralf Seidenschwang – Übersicht</title>
+  <title>Inhaltsverzeichnis – Ralf Seidenschwang</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      font-family: sans-serif;
-      max-width: 800px;
-      margin: 2em auto;
-      padding: 1em;
-      background: #f9f9f9;
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 20px;
     }
-    h1, h2 {
+
+    h1 {
+      text-align: center;
       color: #2c3e50;
     }
-    ul {
-      padding-left: 1.5em;
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
     }
-    li {
-      margin-bottom: 0.5em;
+
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+    }
+
+    .card a {
+      text-decoration: none;
+      color: #1e7e34;
+      font-size: 1.2em;
+      font-weight: bold;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #555;
+      font-size: 0.95em;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      color: #888;
+      font-size: 0.9em;
     }
   </style>
 </head>
 <body>
+  <h1>Inhaltsverzeichnis</h1>
 
-  <h1>Willkommen auf ralfsei.github.io</h1>
-  <p>Dies ist die Übersicht meiner juristischen Texte rund um KI, Legal Tech und digitale Prozesse.</p>
+  <div class="grid">
+    <div class="card">
+      <a href="ki-und-urheberrecht/">KI und Urheberrecht</a>
+      <p>Überblick über urheberrechtliche Fragen beim Einsatz von KI, inkl. OpenAI & Stable Diffusion.</p>
+    </div>
 
-  <h2>📚 Inhaltsverzeichnis</h2>
-  <ul>
-    <li>
-      <a href="https://ralfsei.github.io/ki-und-urheberrecht/">KI und Urheberrecht</a>
-    </li>
-    <li>
-      <a href="https://ralfsei.github.io/Legal-Hold-bei-ChatGPT-bersicht-im-Fall-Wall-Street-Journal-vs.-OpenAI/">
-        Legal Hold bei ChatGPT – Übersicht im Fall <em>Wall Street Journal vs. OpenAI</em>
-      </a>
-    </li>
-    <li>
-      <a href="https://ralfsei.github.io/legaltech-codebeispiel/">
-        Codebeispiel zur Legal-Tech-Automatisierung</a> <em>(diese Seite)</em>
-    </li>
-  </ul>
+    <div class="card">
+      <a href="Legal-Hold-bei-ChatGPT-bersicht-im-Fall-Wall-Street-Journal-vs.-OpenAI/">Legal Hold bei ChatGPT</a>
+      <p>Fallanalyse: Wall Street Journal vs. OpenAI – Was bedeutet das für Legal Hold in Unternehmen?</p>
+    </div>
 
+    <div class="card">
+      <a href="legaltech-codebeispiel/">KI-Codebeispiel</a>
+      <p>Beispielprojekt: automatisch erstellter Podcast aus einem PDF mit KI-Tools von Google und Hugging Face.</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2024 Ralf Seidenschwang · <a href="https://ralfsei.github.io/">ralfsei.github.io</a>
+  </footer>
 </body>
 </html>
