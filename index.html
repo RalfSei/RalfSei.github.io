@@ -4,24 +4,14 @@
   <meta charset="UTF-8">
   <title>Inhaltsverzeichnis – Ralf Seidenschwang</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f8f9fa;
-      margin: 0;
-      padding: 20px;
-    }
-
-    h1 {
-      text-align: center;
-      color: #2c3e50;
-    }
-
+    /* Zusatz-Layout nur für Startseite */
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 20px;
-      margin-top: 40px;
+      margin-top: 2rem;
       max-width: 1000px;
       margin-left: auto;
       margin-right: auto;
@@ -31,7 +21,7 @@
       background-color: white;
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      padding: 20px;
+      padding: 1.5rem;
       text-align: center;
       transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
@@ -43,7 +33,7 @@
 
     .card a {
       text-decoration: none;
-      color: #1e7e34;
+      color: var(--accent-color);
       font-size: 1.2em;
       font-weight: bold;
       display: block;
@@ -54,42 +44,37 @@
       color: #555;
       font-size: 0.95em;
     }
-
-    footer {
-      text-align: center;
-      margin-top: 60px;
-      color: #888;
-      font-size: 0.9em;
-    }
   </style>
 </head>
 <body>
-  <h1>Inhaltsverzeichnis</h1>
+  <main>
+    <h1>Inhaltsverzeichnis</h1>
 
-  <div class="grid">
-    <div class="card">
-      <a href="ki-und-urheberrecht/">KI und Urheberrecht</a>
-      <p>Überblick über urheberrechtliche Fragen beim Einsatz von KI, inkl. OpenAI & Stable Diffusion.</p>
+    <div class="grid">
+      <div class="card">
+        <a href="ki-und-urheberrecht/">KI und Urheberrecht</a>
+        <p>Überblick über urheberrechtliche Fragen beim Einsatz von KI, inkl. OpenAI & Stable Diffusion.</p>
+      </div>
+
+      <div class="card">
+        <a href="Legal-Hold-bei-ChatGPT-bersicht-im-Fall-Wall-Street-Journal-vs.-OpenAI/">Legal Hold bei ChatGPT</a>
+        <p>Fallanalyse: Wall Street Journal vs. OpenAI – Was bedeutet das für Legal Hold in Unternehmen?</p>
+      </div>
+
+      <div class="card">
+        <a href="legaltech-codebeispiel/">KI-Codebeispiel</a>
+        <p>Beispielprojekt: automatisch erstellter Podcast aus einem PDF mit KI-Tools von Google und Hugging Face.</p>
+      </div>
+
+      <div class="card">
+        <a href="KI-in-Alltags-Apps/">KI ist schon da – in (fast) jeder App</a>
+        <p>Wie Künstliche Intelligenz längst unbemerkt in alltäglichen Anwendungen steckt – ein Überblick.</p>
+      </div>
     </div>
 
-    <div class="card">
-      <a href="Legal-Hold-bei-ChatGPT-bersicht-im-Fall-Wall-Street-Journal-vs.-OpenAI/">Legal Hold bei ChatGPT</a>
-      <p>Fallanalyse: Wall Street Journal vs. OpenAI – Was bedeutet das für Legal Hold in Unternehmen?</p>
-    </div>
-
-    <div class="card">
-      <a href="legaltech-codebeispiel/">KI-Codebeispiel</a>
-      <p>Beispielprojekt: automatisch erstellter Podcast aus einem PDF mit KI-Tools von Google und Hugging Face.</p>
-    </div>
-
-    <div class="card">
-      <a href="KI-in-Alltags-Apps/">KI ist schon da – in (fast) jeder App</a>
-      <p>Wie Künstliche Intelligenz längst unbemerkt in alltäglichen Anwendungen steckt – ein Überblick.</p>
-    </div>
-  </div>
-
-  <footer>
-    &copy; 2024 Ralf Seidenschwang · <a href="https://ralfsei.github.io/">ralfsei.github.io</a>
-  </footer>
+    <footer>
+      &copy; 2024 Ralf Seidenschwang · <a href="https://ralfsei.github.io/">ralfsei.github.io</a>
+    </footer>
+  </main>
 </body>
 </html>
