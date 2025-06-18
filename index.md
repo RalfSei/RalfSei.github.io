@@ -3,8 +3,6 @@ layout: default
 title: "Inhaltsverzeichnis – Ralf Seidenschwang"
 ---
 
-<button id="toggle-dark-mode">🌙 Dark Mode</button>
-
 # Inhaltsverzeichnis
 
 <div class="grid">
