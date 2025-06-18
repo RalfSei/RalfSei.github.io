@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ page.title | default: "Ralf Seidenschwang" }}</title>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="/dark-mode.js" defer></script>
+</head>
+<body>
+  <button id="toggle-dark-mode">🌙 Dark Mode</button>
+
+  <nav>
+    <ul>
+      <li><a href="/">← Zur Hauptseite</a></li>
+      <!-- weitere Links kannst du hier ergänzen -->
+    </ul>
+  </nav>
+
+  <main>
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+</body>
+</html>
