@@ -4,6 +4,10 @@ title: "KI & Urheberrecht – Streitfälle 2025"
 permalink: /ki-urheberrecht/
 ---
 
+### Navigation
+
+[← Zur Hauptseite](https://ralfsei.github.io/)
+
 # KI & Urheberrecht – Aktuelle Streitfälle (2025)
 
 ## Internationale Fälle
