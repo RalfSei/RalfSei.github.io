@@ -10,10 +10,17 @@
 <body>
   <button id="toggle-dark-mode">🌙 Dark Mode</button>
 
-  <main>
-    {{ content }}
-  </main>
+  <div class="container">
+    <aside class="sidebar">
+      {% include sidebar.html %}
+    </aside>
+
+    <main class="content">
+      {{ content }}
+    </main>
+  </div>
 
   {% include footer.html %}
 </body>
 </html>
+
