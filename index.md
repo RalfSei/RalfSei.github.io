@@ -6,19 +6,13 @@ permalink: /
 
 # Inhaltsverzeichnis
 
-{% comment %}
-Alle Seiten aus _pages/ anzeigen.
-Filter: nav != false UND show_on_home != false (Default = true in _config.yml)
-Sortierung: nav_order, dann title
-{% endcomment %}
-
-{% assign all_pages = site.pages | where_exp: "p", "p.path contains '_pages/'" %}
-{% assign visible = all_pages | where_exp: "p", "p.nav != false and p.show_on_home != false" %}
-{% assign sorted  = visible | sort: "title" | sort: "nav_order" %}
+{% assign all_pages = site.pages | where_exp:'p','p.path contains "_pages/"' %}
+{% assign visible = all_pages | where_exp:'p','p.nav != false and p.show_on_home != false' %}
+{% assign sorted = visible | sort: 'nav_order' | sort: 'title' %}
 
 <div class="grid">
   {% for p in sorted %}
-    {% assign teaser = p.summary | default: p.excerpt | default: p.content | strip_html | truncate: 160 %}
+    {% assign teaser = p.summary | default:p.excerpt | default:p.content | strip_html | truncate:160 %}
     <a class="card" href="{{ p.url }}">
       <h3>{{ p.title }}</h3>
       <p>{{ teaser }}</p>
