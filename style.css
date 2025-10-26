@@ -188,3 +188,50 @@ button:focus {
   box-shadow: 0 0 8px var(--accent-color);
   background-color: var(--highlight-bg);
 }
+
+/* ==== Sidebar Navigation Styles ==== */
+
+.sidebar a {
+  display: block;
+  padding: 4px 8px;
+  border-radius: 6px;
+  color: var(--text-color, #333);
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.sidebar a:hover {
+  background-color: rgba(80, 150, 255, 0.12);
+  color: #4db2ff;
+}
+
+.sidebar strong {
+  display: block;
+  margin-top: 1em;
+  color: var(--heading-color, #4db2ff);
+  font-size: 0.95em;
+}
+
+/* Aktiver Link */
+.sidebar a.active {
+  font-weight: 600;
+  color: #4db2ff;
+  background-color: rgba(77, 178, 255, 0.08);
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  .sidebar a {
+    color: #ddd;
+  }
+  .sidebar a:hover {
+    background-color: rgba(77, 178, 255, 0.2);
+  }
+  .sidebar strong {
+    color: #7fcaff;
+  }
+  .sidebar a.active {
+    color: #7fcaff;
+    background-color: rgba(77, 178, 255, 0.15);
+  }
+}
