@@ -344,3 +344,50 @@ button:focus {
     border-bottom-color: #333;
   }
 }
+
+/* === Section Headers mit Icons === */
+.section-head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border-bottom: 2px solid var(--border-color, #ddd);
+  padding-bottom: 0.25rem;
+}
+
+/* Icons – nach Section-Name */
+.section-head::before {
+  font-size: 1.2em;
+  line-height: 1;
+  content: "📘"; /* Fallback */
+}
+
+/* KI-Regeln */
+h2.section-head:contains("KI-Regeln")::before {
+  content: "📜";
+}
+
+/* KI & Recht */
+h2.section-head:contains("KI & Recht")::before {
+  content: "⚖️";
+}
+
+/* Systemanalyse */
+h2.section-head:contains("Systemanalyse")::before {
+  content: "🛠️";
+}
+
+/* Zukunft & Trends */
+h2.section-head:contains("Zukunft & Trends")::before {
+  content: "🔮";
+}
+
+/* Dark-Mode Tweaks */
+@media (prefers-color-scheme: dark) {
+  .section-head {
+    border-bottom-color: #333;
+  }
+}
