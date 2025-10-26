@@ -1,3 +1,4 @@
+# _pages/ai-video-rules.md
 ---
 layout: default
 title: "AI Video Rules – Plattform-Richtlinien (2025)"
