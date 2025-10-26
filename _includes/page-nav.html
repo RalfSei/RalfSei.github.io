@@ -1,0 +1,17 @@
+<div class="page-nav">
+  {% if page.url != "/" %}
+  <p>
+    <a href="/">← Zurück zur Übersicht</a>
+    {% assign all_pages = site.pages | where_exp: "p", "p.path contains '_pages/'" | where_exp: "p", "p.nav != false" | sort: 'nav_order' %}
+    {% for p in all_pages %}
+      {% if p.url == page.url %}
+        {% assign next = all_pages[forloop.index] %}
+      {% endif %}
+    {% endfor %}
+    {% if next %}
+      &nbsp;|&nbsp;
+      <a href="{{ next.url }}">Weiter zu: {{ next.title }}</a>
+    {% endif %}
+  </p>
+  {% endif %}
+</div>
