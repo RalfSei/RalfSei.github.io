@@ -11,26 +11,29 @@ timezone: "Europe/Berlin"
 markdown: kramdown
 
 # ---------------------------
-# Plugins (optional, aber von GitHub Pages erlaubt)
+# Plugins (von GitHub Pages erlaubt)
 # ---------------------------
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
 # ---------------------------
-# _pages-Ordner aktivieren
+# _pages-Ordner als Collection aktivieren
 # ---------------------------
 collections:
   pages:
     output: true
-    permalink: /:name/
+    permalink: /:name/      # URL = Dateiname ohne Endung
 
 # ---------------------------
-# Standardwerte für alle Seiten in _pages
+# Standardwerte für alle Dateien in _pages
 # ---------------------------
 defaults:
   - scope:
-      path: ""
-      type: pages
+      path: ""              # alle Dateien
+      type: pages           # bezieht sich auf Collection "pages" oben
     values:
-      layout: page
+      layout: default       # wichtig: es gibt nur _layouts/default.html
+      nav: true
+      nav_order: 100
+      show_on_home: true
