@@ -1,4 +1,11 @@
-/* style.css – zentrales Stylesheet für alle Unterseiten */
+.sidebar strong {
+  display: block;
+  margin-top: 1em;
+  color: #4db2ff;
+}
+
+/* style.css – zentrales Stylesheet für alle 
+Unterseiten */
 
 :root {
   --bg-color: #fdfcfb;
@@ -208,8 +215,7 @@ button:focus {
 .sidebar strong {
   display: block;
   margin-top: 1em;
-  color: var(--heading-color, #4db2ff);
-  font-size: 0.95em;
+  color: #4db2ff;
 }
 
 /* Aktiver Link */
