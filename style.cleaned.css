@@ -290,3 +290,38 @@ button:focus {
     background-color: rgba(77, 178, 255, 0.15);
   }
 }
+
+/* === Sidebar: gezielte Styles, überschreiben globale nav-Regeln === */
+nav.sidebar,
+.sidebar {
+  background: transparent;      /* keine blaue Fläche mehr */
+  padding: 0;                   /* enger, ohne Kastenrahmen */
+  margin-bottom: 1.25rem;
+  border-radius: 0;
+}
+
+.sidebar ul {                   /* Liste in der Sidebar */
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.sidebar li { margin: .35rem 0; }
+
+.sidebar a {                    /* Links bleiben wie von dir definiert */
+  display: block;
+  padding: 4px 8px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.sidebar a:hover {              /* nutzt weiter deine Akzentfarbe */
+  background-color: rgba(80,150,255,.12);
+  color: var(--accent-color);
+}
+
+/* Dark-Mode: nur die Sidebar-Farbe nachziehen (optional) */
+@media (prefers-color-scheme: dark) {
+  nav.sidebar,
+  .sidebar { background: transparent; }
+}
