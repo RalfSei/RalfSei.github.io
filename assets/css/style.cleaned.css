@@ -329,3 +329,18 @@ button:focus {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
   }
 }
+
+.section-head {
+  margin-top: 2.2rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  border-bottom: 1px solid var(--border-color, #ddd);
+  padding-bottom: 0.25rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .section-head {
+    border-bottom-color: #333;
+  }
+}
