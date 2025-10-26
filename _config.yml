@@ -1,39 +1,27 @@
-# ---------------------------
-# Basisinformationen
-# ---------------------------
 title: "RalfSei"
 description: "Persönliche Website & Projekte"
 url: "https://ralfsei.github.io"
-baseurl: ""               # bei User-Pages leer lassen
+baseurl: ""
+
 lang: "de"
 timezone: "Europe/Berlin"
-
 markdown: kramdown
 
-# ---------------------------
-# Plugins (von GitHub Pages erlaubt)
-# ---------------------------
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
-# ---------------------------
-# _pages-Ordner als Collection aktivieren
-# ---------------------------
 collections:
   pages:
     output: true
-    permalink: /:name/      # URL = Dateiname ohne Endung
+    permalink: "/:name/"
 
-# ---------------------------
-# Standardwerte für alle Dateien in _pages
-# ---------------------------
 defaults:
   - scope:
-      path: ""              # alle Dateien
-      type: pages           # bezieht sich auf Collection "pages" oben
+      path: ""
+      type: pages
     values:
-      layout: default       # wichtig: es gibt nur _layouts/default.html
+      layout: default
       nav: true
       nav_order: 100
       show_on_home: true
