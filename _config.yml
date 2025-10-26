@@ -1,2 +1,36 @@
-title: "dumpstack.log.tmp"
-url: "/dumpstack"
+# ---------------------------
+# Basisinformationen
+# ---------------------------
+title: "RalfSei"
+description: "Persönliche Website & Projekte"
+url: "https://ralfsei.github.io"
+baseurl: ""               # bei User-Pages leer lassen
+lang: "de"
+timezone: "Europe/Berlin"
+
+markdown: kramdown
+
+# ---------------------------
+# Plugins (optional, aber von GitHub Pages erlaubt)
+# ---------------------------
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# ---------------------------
+# _pages-Ordner aktivieren
+# ---------------------------
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+
+# ---------------------------
+# Standardwerte für alle Seiten in _pages
+# ---------------------------
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
