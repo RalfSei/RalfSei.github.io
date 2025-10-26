@@ -15,3 +15,6 @@ defaults:
       nav: true
       nav_order: 100
       show_on_home: true
+
+exclude:
+  - legaltech-codebeispiel
