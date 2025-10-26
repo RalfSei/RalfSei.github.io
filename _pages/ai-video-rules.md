@@ -1,9 +1,9 @@
 ---
 layout: default
-title: "AI Video Rules – Plattform-Richtlinien (2025)"
+title: "AI Video Rules – Plattformrichtlinien (2025)"
 permalink: /ai-video-rules/
 nav: true
-nav_section: "KI-Plattformrichtlinien"
+nav_section: "KI-Regeln"
 nav_order: 10
 summary: "Überblick über Richtlinien von TikTok, YouTube und Meta zu Kennzeichnung, Monetarisierung und KI-Erkennung."
 show_on_home: true
