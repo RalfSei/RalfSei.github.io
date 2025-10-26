@@ -3,8 +3,8 @@ layout: default
 title: "LegalTech-Codebeispiel (Podcast)"
 permalink: /legaltech-codebeispiel/
 nav: true
-nav_section: "Künstliche Intelligenz & Recht"
-nav_order: 40
+nav_section: "KI & Recht"
+nav_order: 21
 summary: "Hier findest du Beispielcode und begleitende Informationen zum LegalTech-Podcast-Projekt."
 show_on_home: true
 ---
