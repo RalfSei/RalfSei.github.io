@@ -2,7 +2,7 @@
   const KEY = "theme";
   const root = document.documentElement;
 
-  // 1) Startzustand
+  // 1) Startzustand: gespeicherter Wert > Systempräferenz > Light
   const saved = localStorage.getItem(KEY);
   if (saved === "dark" || saved === "light") {
     root.setAttribute("data-theme", saved);
@@ -12,12 +12,19 @@
     root.setAttribute("data-theme", "light");
   }
 
-  // 2) Theme setzen
+  // 2) Theme setzen (mit Transition-Klasse)
   function setTheme(next) {
+    document.documentElement.classList.add("theme-switching");
+
     root.setAttribute("data-theme", next);
     localStorage.setItem(KEY, next);
+
     const btn = document.getElementById("theme-toggle");
     if (btn) btn.setAttribute("aria-pressed", String(next === "dark"));
+
+    setTimeout(() => {
+      document.documentElement.classList.remove("theme-switching");
+    }, 400);
   }
 
   // 3) Umschalten
@@ -34,17 +41,22 @@
     });
   }
 
-  // 🌓 Button-Label automatisch aktualisieren
+  // 5) 🌓 Button-Label & Animation
   document.addEventListener("DOMContentLoaded", function () {
     const btn = document.getElementById("theme-toggle");
     if (!btn) return;
+
     const update = () => {
       const dark = document.documentElement.getAttribute("data-theme") === "dark";
       btn.textContent = dark ? "☀️ Light Mode" : "🌙 Dark Mode";
     };
+
     update();
+
     btn.addEventListener("click", () => {
-      setTimeout(update, 100);
+      btn.classList.add("spin");
+      setTimeout(() => btn.classList.remove("spin"), 400);
+      setTimeout(update, 150);
     });
   });
 })();
