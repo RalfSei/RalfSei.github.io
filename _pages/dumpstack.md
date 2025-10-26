@@ -7,7 +7,7 @@ nav_section: "Systemanalyse"
 nav_order: 10
 summary: "Technische Analyse und Hintergrundinformationen zur Systemkomponente dumpstack.log.tmp."
 show_on_home: true
-------
+---
 
 ## Systemanalyse – dumpstack.log.tmp
 
