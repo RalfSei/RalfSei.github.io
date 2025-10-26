@@ -474,3 +474,19 @@ h2.section-head:contains("Zukunft & Trends")::before {
   background: #252525;
   box-shadow: 0 3px 10px rgba(0,0,0,0.4);
 }
+
+/* === Akzentfarbe für den Dark-Mode-Button === */
+:root[data-theme="light"] .theme-toggle:hover {
+  border-color: #4db2ff;
+  color: #4db2ff;
+}
+
+:root[data-theme="dark"] .theme-toggle {
+  border-color: #4db2ff;
+  color: #4db2ff;
+}
+
+:root[data-theme="dark"] .theme-toggle:hover {
+  background: #2b2b2b;
+  box-shadow: 0 3px 10px rgba(77,178,255,0.4);
+}
