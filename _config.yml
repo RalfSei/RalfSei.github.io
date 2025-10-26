@@ -1,0 +1,17 @@
+title: "RalfSei"
+markdown: kramdown
+
+collections:
+  pages:
+    output: true
+    permalink: "/:name/"
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+      nav: true
+      nav_order: 100
+      show_on_home: true
