@@ -4,30 +4,30 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- Früh Theme setzen, FOUC vermeiden -->
   <script>
-    (function () {
-      try {
-        var d = document.documentElement;
-        var saved = localStorage.getItem("theme");
-
-        if (saved === "dark" || saved === "light") {
-          d.setAttribute("data-theme", saved);
-        } else if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
-          d.setAttribute("data-theme", "dark");
-        } else {
-          d.setAttribute("data-theme", "light");
-        }
-      } catch (e) {}
-    })();
+  (function () {
+    try {
+      var d = document.documentElement;
+      var saved = localStorage.getItem("theme");
+      if (saved === "dark" || saved === "light") {
+        d.setAttribute("data-theme", saved);
+      } else if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+        d.setAttribute("data-theme", "dark");
+      } else {
+        d.setAttribute("data-theme", "light");
+      }
+    } catch (e) {}
+  })();
   </script>
 
+  <!-- Dein Stylesheet (nur dieses!) -->
   <link rel="stylesheet" href="{{ '/assets/css/style.cleaned.css' | relative_url }}">
 </head>
-
 <body>
 
-  <button id="theme-toggle" class="theme-toggle" aria-pressed="false" onclick="toggleTheme()"
-  title="Theme umschalten">🌙&nbsp;Dark&nbsp;Mode</button>
+  <!-- Toggle-Button -->
+  <button id="theme-toggle" class="theme-toggle" aria-pressed="false" onclick="toggleTheme()">🌙 Dark Mode</button>
 
   <div class="container">
     <aside class="sidebar">
@@ -42,7 +42,8 @@
 
   {% include footer.html %}
 
-  {#-- Scripts ans Ende, relative_url für baseurl-Sicherheit --#}
-  <script src="{{ '/dark-mode.js' | relative_url }}" defer></script>
+  {% comment %} Scripts ans Ende {% endcomment %}
+  <script src="{{ '/assets/js/dark-mode.js' | relative_url }}" defer></script>
+  <script src="{{ '/assets/js/section-icons.js' | relative_url }}" defer></script>
 </body>
 </html>
