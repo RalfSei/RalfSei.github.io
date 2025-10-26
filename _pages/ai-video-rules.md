@@ -2,6 +2,11 @@
 layout: page
 title: "AI Video Rules – Plattform-Richtlinien (2025)"
 permalink: /ai-video-rules/
+nav: true
+nav_section: "KI-Plattformrichtlinien"
+nav_order: 10
+summary: "Überblick über Richtlinien von TikTok, YouTube und Meta zu Kennzeichnung, Monetarisierung und KI-Erkennung."
+show_on_home: true
 ---
 
 Diese Übersicht fasst die wichtigsten Richtlinien von **TikTok**, **YouTube** und **Meta** zusammen – insbesondere zu Kennzeichnungspflichten, Monetarisierung und technischen Erkennungsmaßnahmen.
