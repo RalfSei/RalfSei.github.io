@@ -4,7 +4,7 @@ title: "KI und Urheberrecht"
 permalink: /ki-urheberrecht/
 nav: true
 nav_section: "Künstliche Intelligenz & Recht"
-nav_order: 10
+nav_order: 30
 summary: "Ein Überblick über die urheberrechtlichen Fragen beim Einsatz von KI-Systemen."
 show_on_home: true
 ---
