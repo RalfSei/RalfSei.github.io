@@ -32,9 +32,7 @@ In der Praxis wird **dumpstack.log.tmp** verwendet, um:
 - Debug-Informationen für Entwickler bereitzustellen  
 
 > ⚠️ **Hinweis:** Diese Datei sollte nur mit Vorsicht verändert oder gelöscht werden, da sie wertvolle Debug-Informationen enthält.  
-> Bei sicherheitsrelevanten Logs ist eine Datenschutz- und Zugriffsbewertung notwendig.
-
-## title: dumpstack.log.tmp auslesen description: Wie man die Datei dumpstack.log.tmp unter Windows sichtbar macht und analysiert.
+> Bei sicherheitsrelevanten Logs ist eine Datenschutz- und Zugriffsbewertung notwendig.## title: dumpstack.log.tmp auslesen description: Wie man die Datei dumpstack.log.tmp unter Windows sichtbar macht und analysiert.
 
 # 🛠️ `dumpstack.log.tmp` auslesen
 
