@@ -1,7 +1,7 @@
 ---
-layout: default
+layout: "default"
 title: "Hauptseite"
-permalink: /
+permalink: "/"
 ---
 
 # Inhaltsverzeichnis
