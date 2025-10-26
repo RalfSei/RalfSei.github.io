@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: "LegalTech-Codebeispiel (Podcast)"
 permalink: /legaltech-codebeispiel/
 nav: true
