@@ -20,7 +20,50 @@
 
 /* style.css – zentrales Stylesheet für alle 
 Unterseiten */
+/* Basis-Farbvariablen (Light) */
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --muted: #555;
+  --border-color: #ddd;
+  --card-bg: #f9f9f9;
+  --accent-color: #4db2ff; /* dein Blau */
+}
 
+/* Dark-Mode-Overrides */
+:root[data-theme="dark"] {
+  --bg: #0f0f10;
+  --text: #e6e6e6;
+  --muted: #b6b6b6;
+  --border-color: #333;
+  --card-bg: #1b1b1c;
+  --accent-color: #7fcaff; /* leicht aufgehellt für Dark */
+}
+
+/* Globale Anwendung der Variablen */
+html, body { background: var(--bg); color: var(--text); }
+
+/* Beispiel: Links, Karten, Section-Head etc. binden Variablen ein */
+a { color: var(--accent-color); }
+.section-head { border-bottom: 1px solid var(--border-color); }
+.card { background: var(--card-bg); border-left: 4px solid var(--accent-color); }
+.page-nav { border-top: 1px solid var(--border-color); }
+
+/* Toggle-Button (dezentes Styling) */
+.theme-toggle {
+  position: fixed;
+  right: 14px;
+  bottom: 14px;
+  z-index: 999;
+  border: 1px solid var(--border-color);
+  background: var(--card-bg);
+  color: var(--text);
+  padding: .5rem .75rem;
+  border-radius: 999px;
+  font-size: .95rem;
+  cursor: pointer;
+}
+.theme-toggle:hover { filter: brightness(1.05); }
 /* 1) Design-Variablen */
 :root {
   --bg-color: #fdfcfb;
