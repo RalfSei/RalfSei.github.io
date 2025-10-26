@@ -1,4 +1,3 @@
-# _pages/legaltech-codebeispiel.md
 ---
 layout: default
 title: "LegalTech-Codebeispiel (Podcast)"
