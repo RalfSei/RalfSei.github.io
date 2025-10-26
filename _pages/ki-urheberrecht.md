@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: "KI und Urheberrecht"
 permalink: /ki-urheberrecht/
 nav: true
