@@ -21,7 +21,7 @@ defaults:
       path: ""
       type: pages
     values:
-      layout: default
+      layout: default       # es gibt nur _layouts/default.html
       nav: true
       nav_order: 100
       show_on_home: true
