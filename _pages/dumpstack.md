@@ -4,7 +4,7 @@ title: "Systemanalyse – dumpstack.log.tmp"
 permalink: /dumpstack/
 nav: true
 nav_section: "Systemanalyse"
-nav_order: 20
+nav_order: 30
 summary: "Technische Analyse und Hintergrundinformationen zur Systemkomponente dumpstack.log.tmp."
 show_on_home: true
 ---
