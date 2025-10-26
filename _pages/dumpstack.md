@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: "Systemanalyse – dumpstack.log.tmp"
 permalink: /dumpstack/
 nav: true
