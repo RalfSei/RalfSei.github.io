@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: "AI Video Rules – Plattform-Richtlinien (2025)"
 permalink: /ai-video-rules/
 nav: true
