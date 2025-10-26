@@ -490,3 +490,23 @@ h2.section-head:contains("Zukunft & Trends")::before {
   background: #2b2b2b;
   box-shadow: 0 3px 10px rgba(77,178,255,0.4);
 }
+
+/* === Sanfte Theme-Transitions === */
+html, body,
+.sidebar, .content, .page-nav, .card, .theme-toggle, .section-head, a, hr {
+  transition: background-color 0.35s ease, color 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease, fill 0.35s ease;
+}
+
+/* Performance-Schonung: nur Transition, wenn wirklich Theme wechselt */
+:root.theme-switching * {
+  transition-duration: 0.35s;
+}
+
+/* Accessibility: Nutzer mit "Bewegung reduzieren" bekommen keine Animation */
+@media (prefers-reduced-motion: reduce) {
+  html, body,
+  .sidebar, .content, .page-nav, .card, .theme-toggle, .section-head, a, hr,
+  :root.theme-switching * {
+    transition: none !important;
+  }
+}
