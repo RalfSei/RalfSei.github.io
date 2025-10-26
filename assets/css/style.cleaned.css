@@ -290,3 +290,42 @@ button:focus {
     background-color: rgba(77, 178, 255, 0.15);
   }
 }
+
+/* === Karten-Grid für index.md === */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+.card {
+  background: var(--card-bg, #f9f9f9);
+  padding: 1rem 1.2rem;
+  border-radius: 14px;
+  text-decoration: none;
+  color: inherit;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  border-left: 4px solid #4db2ff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* === Dark Mode Anpassungen === */
+@media (prefers-color-scheme: dark) {
+  .card {
+    background: #1e1e1e;
+    border-left-color: #4db2ff;
+    color: #e0e0e0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  }
+
+  .card:hover {
+    background: #242424;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  }
+}
