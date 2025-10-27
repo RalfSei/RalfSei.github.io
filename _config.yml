@@ -16,6 +16,8 @@ defaults:
       nav_order: 100
       show_on_home: true
 
-title: KI-Projekte von Ralf Seidenschwang
-theme: jekyll-theme-cayman
-markdown: kramdown
+#title: KI-Projekte von Ralf Seidenschwang
+#theme: jekyll-theme-cayman
+#markdown: kramdown
+exclude:
+  - legaltech-codebeispiel   # ❌ blockiert deine Unterseite
