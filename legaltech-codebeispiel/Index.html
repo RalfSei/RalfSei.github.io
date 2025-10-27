@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LegalTech-Codebeispiel – KI-Podcast</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      margin-bottom: 60px;
+    }
+    h1 { font-size: 2em; margin-bottom: 20px; }
+    p { line-height: 1.6; }
+    ul { list-style: none; padding: 0; }
+    li {
+      margin-bottom: 20px;
+      padding: 15px;
+      background-color: #fafafa;
+      border: 1px solid #e0e0e0;
+      border-radius: 5px;
+      transition: transform 0.2s;
+    }
+    li:hover { transform: translateY(-5px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    a { color: #4CAF50; font-weight: bold; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    audio { width: 100%; margin-top: 10px; }
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #333;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>LegalTech-Codebeispiel – KI-Podcast</h1>
+  </header>
+
+  <main>
+    <nav>
+      <p><a href="https://ralfsei.github.io/">← Zur Hauptseite</a></p>
+    </nav>
+
+    <p><b>Automatisch erstellter KI-Podcast</b><br><br>
+      Dieses Beispiel zeigt, wie aus einem PDF automatisch ein Podcast-Dialog erzeugt werden kann.
+      Grundlage ist der EU-Bericht von Mario Draghi zur Wettbewerbsfähigkeit.
+    </p>
+
+    <ul>
+      <li>
+        <a href="/assets/podcast/eu-competitiveness-en.mp3" download>
+          <i class="fas fa-download"></i> Download (MP3 – Englisch)
+        </a>
+        <audio controls preload="none">
+          <source src="/assets/podcast/eu-competitiveness-en.mp3" type="audio/mpeg">
+          Dein Browser unterstützt das Abspielen der Audio-Datei nicht.
+        </audio>
+      </li>
+
+      <li>
+        <a href="/assets/podcast/eu-competitiveness-de.mp3" download>
+          <i class="fas fa-download"></i> Download (MP3 – Deutsch)
+        </a>
+        <audio controls preload="none">
+          <source src="/assets/podcast/eu-competitiveness-de.mp3" type="audio/mpeg">
+          Dein Browser unterstützt das Abspielen der Audio-Datei nicht.
+        </audio>
+      </li>
+
+      <li>
+        <a href="/assets/podcast/eu-competitiveness-report.pdf" download>
+          <i class="fas fa-file-pdf"></i> PDF-Quelle (Draghi-Bericht)
+        </a>
+      </li>
+    </ul>
+
+    <p><i>Inhalte stehen unter Creative Commons CC0 1.0.</i></p>
+  </main>
+
+  <footer>
+    &copy; 2025 Ralf Seidenschwang
+  </footer>
+</body>
+</html>
