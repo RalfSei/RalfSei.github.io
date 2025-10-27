@@ -16,5 +16,6 @@ defaults:
       nav_order: 100
       show_on_home: true
 
-exclude:
-  - legaltech-codebeispiel
+title: KI-Projekte von Ralf Seidenschwang
+theme: jekyll-theme-cayman
+markdown: kramdown
