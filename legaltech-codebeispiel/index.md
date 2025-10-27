@@ -80,3 +80,21 @@ audio{width:100%;margin-top:8px;}
 python -m venv .venv && source .venv/bin/activate
 pip install openai-whisper
 whisper eu-competitiveness-en.mp3 --model small --language en --task transcribe --output_format txt
+```
+
+[← Zur Hauptseite](https://ralfsei.github.io/)
+
+<script>
+function copyLink(url, btnId){
+  navigator.clipboard.writeText(url)
+    .then(()=>flash(btnId,"Kopiert!"))
+    .catch(()=>flash(btnId,"Fehler"));
+}
+function flash(btnId,msg){
+  const el=document.getElementById(btnId);
+  if(!el)return;
+  const old=el.textContent;
+  el.textContent="✅ "+msg;
+  setTimeout(()=>{el.textContent=old;},1800);
+}
+</script>
