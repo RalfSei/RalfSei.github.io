@@ -16,8 +16,11 @@ defaults:
       nav_order: 100
       show_on_home: true
 
-#title: KI-Projekte von Ralf Seidenschwang
-#theme: jekyll-theme-cayman
-#markdown: kramdown
+# Optionales Theme (kannst du aktivieren, wenn du möchtest)
+# theme: jekyll-theme-cayman
+
+# Diese Dateien oder Ordner werden beim Bauen der Website ausgeschlossen
 exclude:
-  - legaltech-codebeispiel   # ❌ blockiert deine Unterseite
+  - node_modules
+  - README.md
+  - legaltech-codebeispiel
