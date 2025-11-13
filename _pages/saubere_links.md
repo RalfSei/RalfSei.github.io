@@ -3,13 +3,17 @@ layout: default
 title: "Saubere Links & Datenschutz"
 permalink: /saubere-links/
 nav: true
-nav_section: "Datenschutz"
+nav_section: "🔐 Datenschutz"
 nav_order: 50
 summary: "Warum saubere Links für Datenschutz, Lesbarkeit und Vertrauen wichtig sind – und wie Tracking-Parameter entfernt werden."
 show_on_home: true
 ---
 
 ## Saubere Links & Datenschutz
+
+> <span style="background-color: #f5f5f5; padding: 0.25rem 0.5rem; border-radius: 0.25rem;">
+> 🔐 Datenschutz-Schwerpunkt
+> </span>
 
 Viele Links enthalten unnötige Tracking-Parameter wie `utm_source`, `fbclid` oder `gclid`. Diese dienen vor allem Analyse- und Marketingzwecken und sind für den eigentlichen Seitenaufruf meist nicht notwendig.
 
