@@ -42,7 +42,7 @@ Hier findest du mich online:
   https://www.linkedin.com/in/ralf-seidenschwang
 
 - 👍 **Facebook**:  
-  https://www.facebook.com/profile.php?id=100095647536434
+  https://www.facebook.com/ralfseidenschwang
 
 - 📸 **Instagram**:  
   https://www.instagram.com/ralfseidenschwang/
