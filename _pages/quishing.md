@@ -99,10 +99,6 @@ Seriöse Unternehmen fragen **niemals** Passwörter, TANs oder Zahlungsdaten üb
 - Eigene QR-Codes (Flyer, Poster, Schilder) regelmäßig kontrollieren  
 - Verdächtige Vorfälle sofort an IT-Sicherheit / Datenschutzbeauftragte melden  
 
----
-
 ### Fazit
 
 Quishing ist eine moderne Variante des Phishings, die besonders tückisch ist, weil QR-Codes die echte Zieladresse verbergen. Mit Aufklärung, einem kritischen Blick auf QR-Codes und einigen einfachen Sicherheitsmaßnahmen lassen sich viele Angriffe jedoch verhindern.
-
-➡️ [Zurück zur Übersicht](/)
