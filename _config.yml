@@ -24,4 +24,3 @@ defaults:
 exclude:
   - node_modules
   - README.md
-  - legaltech-codebeispiel
