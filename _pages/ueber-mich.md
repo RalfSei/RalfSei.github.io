@@ -41,7 +41,3 @@ Telefonisch:
 
 - ↗ **Portfolio & Profil**:  
   [{{ site.portfolio_url }}]({{ site.portfolio_url }})
-
----
-
-➡️ [Zurück zur Startseite](/)
