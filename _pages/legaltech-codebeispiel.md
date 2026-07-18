@@ -16,7 +16,3 @@ Hier findest du Beispielcode und begleitende Informationen zum LegalTech-Podcast
 - **Ziel:** Verbindung von Rechtsthemen mit praktischer KI-Programmierung.  
 - **Tech-Stack:** Python, OpenAI API, HuggingFace, Whisper.  
 - **Beispiel:** Automatische Transkription von Podcast-Folgen mit KI.
-
----
-
-➡️ [Zurück zur Übersicht](/)
