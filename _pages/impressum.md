@@ -36,7 +36,3 @@ ausschließlich deren Betreiber verantwortlich.
 
 Ich bin nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren  
 vor einer Verbraucherschlichtungsstelle teilzunehmen.
-
----
-
-➡️ [Zurück zur Startseite](/)
