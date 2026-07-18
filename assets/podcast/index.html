@@ -1,121 +1,206 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KI-Testseite von Ralf</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>KI-Podcast aus einem PDF – Ralf Seidenschwang</title>
+
+    <!-- Theme vor dem Rendern setzen, gleiche Logik wie im Jekyll-Layout -->
+    <script>
+    (function () {
+      try {
+        var d = document.documentElement;
+        var saved = localStorage.getItem("theme");
+        if (saved === "dark" || saved === "light") {
+          d.setAttribute("data-theme", saved);
+        } else if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+          d.setAttribute("data-theme", "dark");
+        } else {
+          d.setAttribute("data-theme", "light");
+        }
+      } catch (e) {}
+    })();
+
+    function toggleTheme() {
+      var d = document.documentElement;
+      d.setAttribute("data-theme", d.getAttribute("data-theme") === "dark" ? "light" : "dark");
+      try { localStorage.setItem("theme", d.getAttribute("data-theme")); } catch (e) {}
+    }
+    </script>
+
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 0;
-            padding: 0;
+        /* Farbwerte identisch zu style.cleaned.css */
+        :root {
+            --bg: #ffffff;
+            --text: #1c2128;
+            --muted: #5a626d;
+            --border-color: #dfe3e8;
+            --card-bg: #f6f8fa;
+            --accent-color: #2d4a63;
         }
 
-        header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        :root[data-theme="dark"] {
+            --bg: #0d1117;
+            --text: #e6edf3;
+            --muted: #8b949e;
+            --border-color: #30363d;
+            --card-bg: #161b22;
+            --accent-color: #8ab4f8;
+        }
+
+        html, body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+            line-height: 1.65;
+            margin: 0;
+            padding: 0;
+            transition: background 0.35s ease, color 0.35s ease;
+        }
+
+        :root[data-theme="dark"] body {
+            background-image: radial-gradient(rgba(155, 189, 215, 0.07) 1px, transparent 1px);
+            background-size: 24px 24px;
         }
 
         main {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            background-color: white;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            border-radius: 8px;
-            margin-bottom: 60px;
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 3rem 1.25rem 4rem;
         }
 
         h1 {
-            margin-bottom: 20px;
-            font-size: 2em;
+            font-size: 1.9rem;
+            line-height: 1.25;
+            margin: 0 0 0.35rem;
         }
 
-        p {
-            line-height: 1.6;
+        .subline {
+            color: var(--muted);
+            font-size: 0.95rem;
+            margin: 0 0 2.5rem;
+        }
+
+        p { max-width: 68ch; }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+        a:hover { text-decoration: underline; }
+
+        a:focus-visible,
+        button:focus-visible {
+            outline: 2px solid var(--accent-color);
+            outline-offset: 2px;
         }
 
         ul {
             list-style: none;
             padding: 0;
+            margin: 2rem 0;
         }
 
         li {
-            margin-bottom: 20px;
-            padding: 15px;
-            background-color: #fafafa;
-            border: 1px solid #e0e0e0;
-            border-radius: 5px;
-            transition: transform 0.2s;
+            margin-bottom: 1.2rem;
+            padding: 1.1rem 1.25rem;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-left: 3px solid var(--accent-color);
+            border-radius: 10px;
+            transition: transform 0.2s ease, border-color 0.2s ease;
         }
-
         li:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: translateY(-3px);
+            border-color: var(--accent-color);
         }
 
-        a {
-            color: #4CAF50;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
+        li a { font-weight: 600; }
 
         audio {
             width: 100%;
-            margin-top: 10px;
+            margin-top: 0.9rem;
+        }
+
+        .page-nav {
+            text-align: center;
+            margin: 2rem 0 0;
+        }
+
+        .theme-toggle {
+            position: fixed;
+            right: 14px;
+            bottom: 14px;
+            z-index: 999;
+            border: 1px solid var(--border-color);
+            background: var(--card-bg);
+            color: var(--muted);
+            padding: 0.5rem 0.9rem;
+            border-radius: 999px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.25s ease;
+        }
+        .theme-toggle:hover {
+            color: var(--accent-color);
+            border-color: var(--accent-color);
         }
 
         footer {
-            text-align: center;
-            padding: 20px 0;
-            background-color: #333;
-            color: white;
+            max-width: 760px;
+            margin: 0 auto 2rem;
+            padding: 1.25rem;
+            border-top: 1px solid var(--border-color);
+            color: var(--muted);
+            font-size: 0.9rem;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html, body, li { transition: none !important; }
+            li:hover { transform: none; }
         }
 
         @media (max-width: 600px) {
-            main {
-                margin: 20px;
-                padding: 15px;
-            }
-            h1 {
-                font-size: 1.5em;
-            }
+            main { padding: 2rem 1rem 3rem; }
+            h1 { font-size: 1.5rem; }
+        }
+
+        @media print {
+            .theme-toggle, .page-nav { display: none !important; }
+            html, body { background: #fff !important; color: #000 !important; }
         }
     </style>
 </head>
 
 <body>
-    <header>
-        <h1>KI-Testseite von Ralf</h1>
-    </header>
+
+    <button class="theme-toggle" type="button" onclick="toggleTheme()" aria-label="Farbschema wechseln">🌙 Dark Mode</button>
 
     <main>
-        <nav>
-            <p><a href="https://ralfsei.github.io/">← Zur Hauptseite</a></p>
+        <nav class="page-nav" style="text-align: left; margin: 0 0 2rem;">
+            <a href="https://ralfsei.github.io/">← Zur Startseite</a>
         </nav>
 
-        <p><b>Ich habe hier aus einem vorhandenen PDF mit einer künstlichen Intelligenz einen Podcast erstellen lassen.</b><br><br>
-           Der Podcast wurde mit einem Tool automatisch erstellt und simuliert ein Gespräch zwischen zwei Personen, die sich über den Inhalt der PDF-Datei unterhalten.<br>
-           Das PDF ist ein Bericht von Mario Draghi über die Wettbewerbsfähigkeit der EU.<br>
-           Es sprechen keine echten Personen.<br>
-           <b>Die englische Version wurde mit Google NotebookLM erstellt, die deutsche mit Hugging Face Podcastgen.</b>
+        <h1>KI-Podcast aus einem PDF</h1>
+        <p class="subline">Automatisch erzeugtes Gespräch zum Draghi-Report zur Wettbewerbsfähigkeit der EU</p>
+
+        <p>
+            <b>Ich habe hier aus einem vorhandenen PDF mit einer künstlichen Intelligenz einen Podcast erstellen lassen.</b>
+        </p>
+        <p>
+            Der Podcast wurde mit einem Tool automatisch erstellt und simuliert ein Gespräch zwischen zwei Personen,
+            die sich über den Inhalt der PDF-Datei unterhalten. Das PDF ist ein Bericht von Mario Draghi über die
+            Wettbewerbsfähigkeit der EU. <b>Es sprechen keine echten Personen.</b>
+        </p>
+        <p>
+            Die englische Version wurde mit Google NotebookLM erstellt, die deutsche mit Hugging Face Podcastgen.
         </p>
 
         <ul>
             <li>
                 <a href="/assets/podcast/eu-competitiveness-en.mp3" download>
-                    <i class="fas fa-download"></i> Download des Podcasts (MP3 – Englisch)
+                    ⬇ Download des Podcasts (MP3 – Englisch)
                 </a>
                 <audio controls preload="none">
                     <source src="/assets/podcast/eu-competitiveness-en.mp3" type="audio/mpeg">
@@ -125,7 +210,7 @@
 
             <li>
                 <a href="/assets/podcast/eu-competitiveness-de.mp3" download>
-                    <i class="fas fa-download"></i> Download des Podcasts (MP3 – Deutsch)
+                    ⬇ Download des Podcasts (MP3 – Deutsch)
                 </a>
                 <audio controls preload="none">
                     <source src="/assets/podcast/eu-competitiveness-de.mp3" type="audio/mpeg">
@@ -135,13 +220,15 @@
 
             <li>
                 <a href="/assets/podcast/eu-competitiveness-report.pdf" download>
-                    <i class="fas fa-file-pdf"></i> Download der PDF-Quelle (Draghi-Report)
+                    📄 Download der PDF-Quelle (Draghi-Report)
                 </a>
             </li>
         </ul>
-    </main>
 
-<p><a href="/legaltech-codebeispiel/">← Zurück zum Podcast-Beitrag</a></p>
+        <nav class="page-nav">
+            <a href="/legaltech-codebeispiel/">← Zurück zum Podcast-Beitrag</a>
+        </nav>
+    </main>
 
     <footer>
         &copy; 2026 Ralf Seidenschwang – Inhalte unter
@@ -149,5 +236,6 @@
             Creative Commons Namensnennung 4.0 (CC BY 4.0)
         </a>.
     </footer>
+
 </body>
 </html>
