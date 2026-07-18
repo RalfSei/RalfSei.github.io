@@ -44,4 +44,4 @@ Telefonisch:
 
 ---
 
-➡️ [Zurück zur Hauptseite](/)
+➡️ [Zurück zur Startseite](/)
