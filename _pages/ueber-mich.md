@@ -27,17 +27,17 @@ Diese Website dient dazu, interessante Themen übersichtlich darzustellen und Wi
 ## 📬 Kontakt
 
 Du erreichst mich per E-Mail:  
-**ralf@seidenschwang.onmicrosoft.com**
+**[ralf@seidenschwang.onmicrosoft.com](mailto:ralf@seidenschwang.onmicrosoft.com)**
 
 Telefonisch:  
-**+49 6758 2840988**
+**[+49 6758 2840988](tel:+4967582840988)**
 
 ---
 
 ## 🌐 Online
 
 - 🔗 **LinkedIn**:  
-  https://www.linkedin.com/in/ralf-seidenschwang
+  [linkedin.com/in/ralf-seidenschwang](https://www.linkedin.com/in/ralf-seidenschwang)
 
 - ↗ **Portfolio & Profil**:  
   [{{ site.portfolio_url }}]({{ site.portfolio_url }})
