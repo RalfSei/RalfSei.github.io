@@ -8,7 +8,7 @@ nav_order: 999
 
 ## Impressum
 
-### Angaben gemäß § 5 TMG
+### Angaben gemäß § 5 DDG
 
 **Ralf Seidenschwang**  
 Am Weinberg 4  
@@ -26,21 +26,16 @@ Telefon: +49 6758 2840988
 Am Weinberg 4  
 55596 Waldböckelheim  
 
-### Hinweis
-
-Diese Website dient ausschließlich privaten und informativen Zwecken.  
-Es werden keine geschäftlichen Leistungen angeboten.
-
 ### Haftungsausschluss
 
 Trotz sorgfältiger inhaltlicher Kontrolle übernehme ich keine Haftung  
 für die Inhalte externer Links. Für den Inhalt verlinkter Seiten sind  
 ausschließlich deren Betreiber verantwortlich.
 
-### Online-Streitbeilegung gemäß Art. 14 Abs. 1 ODR-VO
+### Streitbeilegung
 
-Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:  
-https://ec.europa.eu/consumers/odr/
+Ich bin nicht bereit und nicht verpflichtet, an Streitbeilegungsverfahren  
+vor einer Verbraucherschlichtungsstelle teilzunehmen.
 
 ---
 
