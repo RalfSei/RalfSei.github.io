@@ -39,4 +39,4 @@ vor einer Verbraucherschlichtungsstelle teilzunehmen.
 
 ---
 
-➡️ [Zurück zur Hauptseite](/)
+➡️ [Zurück zur Startseite](/)
