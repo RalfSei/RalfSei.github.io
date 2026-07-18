@@ -4,7 +4,7 @@ title: "Über mich"
 permalink: /ueber-mich/
 nav: true
 nav_order: 5
-summary: "Informationen über Ralf Seidenschwang – Interessen, Tätigkeitsschwerpunkte und Social-Media-Profile."
+summary: "Informationen über Ralf Seidenschwang – Interessen, Tätigkeitsschwerpunkte und fachliche Profile."
 show_on_home: true
 ---
 
@@ -12,7 +12,7 @@ show_on_home: true
 
 Hallo! Ich bin **Ralf Seidenschwang** aus Waldböckelheim.
 
-Ich beschäftige mich privat intensiv mit Themen wie:
+Ich beschäftige mich intensiv mit Themen wie:
 
 - Künstliche Intelligenz  
 - Recht & Regulierung  
@@ -34,18 +34,13 @@ Telefonisch:
 
 ---
 
-## 🌐 Social Media
-
-Hier findest du mich online:
+## 🌐 Online
 
 - 🔗 **LinkedIn**:  
   https://www.linkedin.com/in/ralf-seidenschwang
 
-- 👍 **Facebook**:  
-  https://www.facebook.com/ralfseidenschwang
-
-- 📸 **Instagram**:  
-  https://www.instagram.com/ralfseidenschwang/
+- ↗ **Portfolio & Profil**:  
+  [{{ site.portfolio_url }}]({{ site.portfolio_url }})
 
 ---
 
