@@ -40,4 +40,4 @@ Telefonisch:
   [linkedin.com/in/ralf-seidenschwang](https://www.linkedin.com/in/ralf-seidenschwang)
 
 - ↗ **Portfolio & Profil**:  
-  [{{ site.portfolio_url }}]({{ site.portfolio_url }})
+  [https://ralfsei.de](https://ralfsei.de)
