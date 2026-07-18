@@ -105,4 +105,4 @@ Stand: Juli 2026
 
 ---
 
-➡️ [Zurück zur Hauptseite](/)
+➡️ [Zurück zur Startseite](/)
