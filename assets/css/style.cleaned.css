@@ -136,3 +136,24 @@ html, body, .sidebar, .content, .page-nav, .card, .theme-toggle, .section-head, 
   .sidebar { order: 2; }
   .content { order: 1; }
 }
+/* Ans Ende von assets/css/style.cleaned.css anhängen.
+   Setzt den externen Portfolio-Link optisch von der internen Navigation ab. */
+ 
+.sidebar-external {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid currentColor;
+  border-top-color: rgba(128, 128, 128, 0.3);
+  font-size: 0.95rem;
+}
+ 
+.sidebar-external a {
+  font-weight: 600;
+  text-decoration: none;
+}
+ 
+.sidebar-external a:hover,
+.sidebar-external a:focus-visible {
+  text-decoration: underline;
+}
+ 
