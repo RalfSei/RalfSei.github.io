@@ -62,8 +62,3 @@ Saubere Links sind ein kleiner, aber wirksamer Baustein für besseren Datenschut
 - Höhere Transparenz gegenüber Leser:innen und Kund:innen  
 
 Gleichzeitig steigt die Nutzerfreundlichkeit, weil kurze, klare URLs eher angeklickt und weitergegeben werden.
-
----
-➡️ Mehr zum Thema Sicherheitsrisiken durch QR-Codes: [Quishing – Gefahr durch manipulierte QR-Codes](/quishing/)
-
-➡️ [Zurück zur Übersicht](/)
