@@ -32,6 +32,12 @@
   <div class="container">
     <aside class="sidebar">
       {% include sidebar.html %}
+
+      {% if site.portfolio_url %}
+      <p class="sidebar-external">
+        <a href="{{ site.portfolio_url }}" rel="noopener">↗ Portfolio &amp; Profil</a>
+      </p>
+      {% endif %}
     </aside>
 
     <main class="content" role="main">
