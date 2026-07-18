@@ -102,7 +102,3 @@ Ich behalte mir vor, diese Erklärung anzupassen, falls sich die gesetzlichen
 Anforderungen ändern.
 
 Stand: Juli 2026
-
----
-
-➡️ [Zurück zur Startseite](/)
