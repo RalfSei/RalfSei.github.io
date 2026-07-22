@@ -1,6 +1,8 @@
 title: "RalfSei"
-portfolio_url: "https://ralfsei.de"
 markdown: kramdown
+
+portfolio_url: "https://ralfsei.de"
+profil_url: "https://profil.ralfsei.de"
 
 collections:
   pages:
@@ -24,3 +26,4 @@ defaults:
 exclude:
   - node_modules
   - README.md
+  - legaltech-codebeispiel
