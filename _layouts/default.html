@@ -35,7 +35,12 @@
 
       {% if site.portfolio_url %}
       <p class="sidebar-external">
-        <a href="{{ site.portfolio_url }}" rel="noopener">↗ Portfolio &amp; Profil</a>
+        <a href="{{ site.portfolio_url }}" rel="noopener">↗ Portfolio</a>
+      </p>
+      {% endif %}
+      {% if site.profil_url %}
+      <p class="sidebar-external">
+        <a href="{{ site.profil_url }}" rel="noopener">↗ IT-Profil (Bewerbungs-Wiki)</a>
       </p>
       {% endif %}
     </aside>
